@@ -38,7 +38,7 @@ const LoginForm = () => {
               htmlFor="password"
               className="block text-sm font-medium text-gray-700"
             >
-              Password:
+              Senha:
             </label>
             <input
               type="password"
@@ -51,10 +51,19 @@ const LoginForm = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none  focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
-            Login
+            Entrar
           </button>
+          <p className="mt-4 text-center text-gray-600">
+            Não tem uma conta?{" "}
+            <a
+              href="/signIn"
+              className="text-indigo-600 hover:text-indigo-800 focus:outline-none focus:underline"
+            >
+              Cadastre-se
+            </a>
+          </p>
         </form>
       </div>
     </div>
